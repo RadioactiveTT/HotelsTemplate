@@ -76,6 +76,10 @@ li {
 .menu_item {
     padding: 0px 15px;
 }
+.menu_item:hover{
+    border-bottom: 3px solid #fff;
+    transition: all 0.3s;
+}
 .cta__main{
     height: 100%;
     display: flex;
@@ -87,6 +91,8 @@ li {
     align-self: start;
     color: #fff;
     margin-top: 200px;
+ 
+
 }
 .text__inner_head, .text__inner_about, .text__inner_what
 {
@@ -108,15 +114,46 @@ font-family: 'Adobe Garamond Pro';
 letter-spacing: 0.4em;
 margin-top: -20px;
 }
+.text__inner_footer{
+    max-width: 590px;
+    line-height: 30px;
+    letter-spacing: 0.1em;
+}
 
+.button__inner{
+    position: absolute;
+    bottom: 0;
+}
 .order__btn{
+width: 268px;
+height: 78px;
+outline: none;
+border: none;
+border-radius: 10px;
+background-color: #E0B973;
 
+}
+.order__btn_text::before{
+    content: url(../img/book_btn.svg);
+    width: 28px;
+    height: 28px;
+    margin-right: 25px;
+
+}
+.order__btn_text{
+    color: #fff;
+    font-size: 25px;
+    font-weight: 700;
+    text-transform: uppercase;
 }
 .scroll{
     display: flex;
     flex-direction: column;
     align-items: center;
-
+    letter-spacing: 0.05em;
+    font-weight: 700;
+    
+    margin-top: 80px;
 }
 .scroll::after{
 content: url(../img/scroll.svg);
